@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <title>E4 - DOM II</title>
+  </head>
+  <body>
+    <section>
+      <div class="card-container">
+        <!-- nombre de pizza -->
+        <h2 id="nmbPizza"></h2>
+
+        <img id="imgCard"
+          src="./img/capScreen.png"
+          width="220px"
+          height="200px"
+          alt="Guarda que te como hermano"
+        />
+
+        <!-- ingredientes -->
+        <p id="ingrePizza" class="element"></p>
+        <!-- precio -->
+        <h4 id="pcoPizza" class="element"></h4>
+      </div>
+
+      <div>
+        <input type="number" id="idValor" placeholder="Ingresar Codigo" />
+
+        <input type="submit" value="Buscar Pizza" id="btn" />
+      </div>
+    </section>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
+
+<!-- 👉 A cada Pizza, agregarle una imagen. 
+👉 Guardar el array en el local storage. 
+👉 Crear un archivo HTML que contenga un card en donde se renderice el nombre, imagen, ingredientes y precio de una pizza (Estilizarlo con CSS 🎨). 
+👉 Debajo del card tiene que haber un input y un botón. 
+
+Deberemos colocar un numero en el input y, al apretar el botón, deberá renderizar en el card la pizza cuyo id coincida con el numero ingresado en el input.
+
+🚨 Si no coincide con ningún id, renderizar un mensaje de error. -->

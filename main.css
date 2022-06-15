@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-bg-color: #fcdc73;
+  --main-bgCard-color: rgba(250, 249, 248, 0.3);
+  --main-txt1-color: #193948;
+  --main-txt2-color: #e76268;
+  --main-other-color: #4fadc0;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.alert {
+    color: var(--main-txt2-color);
+}
+
+.card-container {
+    background-color: var(--main-bgCard-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 450px;
+    border-radius: .8em;
+    box-shadow: .5em .5em .4em .2em rgba(0, 0, 0, .2);
+    border: 1px solid white; 
+    text-align: center; 
+    color:var(--main-txt1-color);
+    margin-bottom: 2em;
+    
+}
+
+img {
+    margin: 8%;
+    border-radius: .5em;
+    box-shadow: .5em .1em .9em  rgba(0, 0, 0, .4);
+}
+
+input {
+    display: block;
+    margin: 1em auto 1em auto;
+    padding: .5em;
+    border-radius: .5em;
+    border-style: solid;
+}
+
+#btn {
+    cursor: pointer;
+}
