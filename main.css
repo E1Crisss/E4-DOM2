@@ -5,26 +5,25 @@
 
 :root {
   --main-bg-color: #fcdc73;
-  --main-bgCard-color: rgba(250, 249, 248, 0.3);
-  --main-txt1-color: #193948;
-  --main-txt2-color: #e76268;
+  --main-bgCard-color: #FFFFFF10;
+  --main-txt1-color: #060e11;
   --main-other-color: #4fadc0;
 }
 
 body {
-  background-color: var(--main-bg-color);
+  /* background-color: var(--main-bg-color); */
+  background: url(https://img.freepik.com/foto-gratis/vista-superior-pizza-pepperoni-salchichas-champinones-pimiento-verde-oliva-maiz-madera-negra_141793-2158.jpg?w=2000) no-repeat fixed;
+  background-size: cover;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 2em;
 }
 
-.alert {
-    color: var(--main-txt2-color);
-}
-
 .card-container {
     background-color: var(--main-bgCard-color);
+    backdrop-filter: blur(12px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,27 +32,43 @@ body {
     height: 450px;
     border-radius: .8em;
     box-shadow: .5em .5em .4em .2em rgba(0, 0, 0, .2);
-    border: 1px solid white; 
     text-align: center; 
     color:var(--main-txt1-color);
     margin-bottom: 2em;
-    
+    font-size: 19px;
 }
 
 img {
     margin: 8%;
+    background-size: cover;
     border-radius: .5em;
     box-shadow: .5em .1em .9em  rgba(0, 0, 0, .4);
 }
 
 input {
+    /* bçackground: rgba(0, 0, 0, .2);   */
     display: block;
     margin: 1em auto 1em auto;
     padding: .5em;
     border-radius: .5em;
     border-style: solid;
+    /* color:white; */
 }
+
+#idValor{
+  background-color: var(--main-bgCard-color);
+  backdrop-filter: blur(12px);
+}
+
+#idValor::placeholder{
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 
 #btn {
     cursor: pointer;
 }
+

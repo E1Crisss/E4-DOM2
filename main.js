@@ -65,11 +65,11 @@ const captValor = () => {
     $ingrePizza.innerHTML = `<b>Los ingredientes son:</b> <br> ${menu.ingredientes}`;
     $pcoPizza.innerHTML = ` ${menu.precio}`;
   } else {
-    $nmbPizza.classList.add("alert");
     $nmbPizza.innerHTML = "ERROR";
-    // $imgCard.setAttribute("src", menu.imagen);
-    $ingrePizza.innerHTML = "Ingrese del 1 al 6";
-    $pcoPizza.innerHTML = "";
+    $imgCard.setAttribute("src", 'img/alert.webp');
+    $ingrePizza.innerHTML = "";
+    $pcoPizza.innerHTML = "Ingrese del 1 al 6";
+    alert('ERROR NO HAY PIZZAS CON ESE CODIGO');
   }
 };
 
