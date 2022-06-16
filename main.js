@@ -63,7 +63,7 @@ const captValor = () => {
     $nmbPizza.innerHTML = menu.nombre;
     $imgCard.setAttribute("src", menu.imagen);
     $ingrePizza.innerHTML = `<b>Los ingredientes son:</b> <br> ${menu.ingredientes}`;
-    $pcoPizza.innerHTML = ` ${menu.precio}`;
+    $pcoPizza.innerHTML = `$ ${menu.precio}`;
   } else {
     $nmbPizza.innerHTML = "ERROR";
     $imgCard.setAttribute("src", 'img/alert.webp');
